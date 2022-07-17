@@ -13,7 +13,7 @@ export function appointmentInPast(appointmentData: Appointment): boolean {
 
 export function getAppointmentColor(
   appointmentData: Appointment,
-  userId: number | undefined,
+  userId?: number,
 ): [string, string] {
   const taken = !!appointmentData.userId;
 

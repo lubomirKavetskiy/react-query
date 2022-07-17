@@ -9,6 +9,7 @@ export function getStoredUser(): User | null {
 }
 
 export function setStoredUser(user: User): void {
+  alert(2);
   localStorage.setItem(USER_LOCALSTORAGE_KEY, JSON.stringify(user));
 }
 

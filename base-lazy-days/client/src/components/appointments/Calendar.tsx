@@ -55,8 +55,9 @@ export function Calendar(): ReactElement {
           Only show available
         </Checkbox>
       </HStack>
-      <Grid templateColumns="repeat(7, 1fr)" gap={4} my={5} mx={10}>
+      <Grid templateColumns="repeat(7, 1fr)" gap={4} my={3} mx={10}>
         {/* first day needs a grid column */}
+
         <DateBox
           date={1}
           gridColumn={monthYear.firstDOW + 1}

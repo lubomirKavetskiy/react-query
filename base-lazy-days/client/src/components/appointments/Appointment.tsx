@@ -27,6 +27,7 @@ export function Appointment({
   appointmentData,
 }: AppointmentProps): ReactElement {
   const { user } = useUser();
+
   const reserveAppointment = useReserveAppointment();
   const [textColor, bgColor] = getAppointmentColor(appointmentData, user?.id);
 
